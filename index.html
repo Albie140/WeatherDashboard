@@ -17,11 +17,11 @@
         <nav class="navbar navbar-light bg-light">
             <form id="search-weather">
                 <input type="text" id="weather-input"><br>
-                <button data-search ="city" id="add-city">Search Weather</button>
-                <span id="error"></span>
+                <button data-search="city" id="add-city">Search Weather</button>
+
             </form>
         </nav>
-        <div class="card" style="width: 15rem;">
+        <div class="card" style="width: 14rem;">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Cras justo odio</li>
                 <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -30,29 +30,78 @@
         </div>
     </div>
 
-    <section class=" container">
-        <section class="row d-flex justify-content-end">
-            <section class="col-6">
-                <h2>Weather Forecast</h2>
-                <div class="city"></div>
-                <div class="wind speed"></div>
-                <div class="humidity"></div>
-                <div class="temp"></div>
-                <div class="uv index"></div>
-
+    <section class="container">
+            <section class="col-10">
+                <h2>Weather Forecast</h2> <br>
+                <div class="city"></div><br>
+                <div class="temp"></div><br>
+                <div class="windSpeed"></div><br>
+                <div class="humidity"></div><br>
+                <div class="uvIndex"></div>
             </section>
-        </section>
+            <br>
+
+        <hr>
+    </section>
+        <section class="forecastContainer">
         <section class="row d-flex justify-content-end">
             <section class="col-10">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut maxime hic harum culpa quam quasi
-                    minima,
-                    pariatur eligendi vitae perspiciatis voluptatibus atque nisi animi deleniti suscipit omnis ducimus
-                    accusamus quo!
-                </p>
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/100" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/100" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/100" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/100" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/100" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
-
     </section>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

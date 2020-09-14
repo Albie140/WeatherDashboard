@@ -1,6 +1,6 @@
 .sidenav{
     height:100%;
-    width: 250px;
+    width: 225px;
     position:fixed;
     top: 0;
     left: 0;
@@ -17,6 +17,7 @@
 .container{
     margin:auto;
     padding: top 20px;
-    width: 100%;
-    float:right
+    padding-left: 50px;
+    width: 90%;
+   float: right
 }
