@@ -1,4 +1,5 @@
 $("#currentDate").html(moment().format("LL"))
+
 $("#add-city").on("click", function (event) {
     event.preventDefault()
     var city = $("#weather-input").val();
@@ -74,12 +75,12 @@ function forecast(long, lat) {
                 var windSpeed = $(`<p>Wind Speed: ${response.daily[i].wind_speed}</p>`);
                 var humidity = $(`<p>Humidity: ${response.daily[i].humidity}</p>`);
                 var uv = $(`<p>UV: ${response.daily[i].uvi}</p>`);
-                var date = $(`<p>Date: ${response.daily[i].dt}</p>`);
+                // var date = $(`<p>Date: ${response.daily[i].dt}</p>`);
                 $(`.card-body${i}`).append(temperature)
                 $(`.card-body${i}`).append(windSpeed)
                 $(`.card-body${i}`).append(humidity)
                 $(`.card-body${i}`).append(uv)
-                $(`.card-body${i}`).append(date)
+                // $(`.card-body${i}`).append(date)
              }
             
         })
@@ -103,14 +104,9 @@ function uvIndex(long, lat) {
         })
 }
 
+var buttonList =$(".cityList");
+var newCityButton = $("<button>");
+newCityButton.text("weather-input");
+newCityButton.addClass(addCity);
 
-// var search = ""
-// if(localStorage.getItem("search") !== null){
-//     var searchHistory = localStorage.getItem("search");
-//     var searchArray = searchHistory.split();
-//     $("#previous-search").empty();
-//         for (var i = 0; i<searchArray.length; i++){
-// $("#previous-search").append("<li>" + searchArray[i] + "</li>")
-//         }
-        
-// }
+buttonList.append(newCityButton)
