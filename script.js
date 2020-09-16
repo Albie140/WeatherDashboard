@@ -34,6 +34,7 @@ $("#add-city").on("click", function (event) {
             uvIndex(response.coord.lon, response.coord.lat)
             forecast(response.coord.lon, response.coord.lat)
             addButtons()
+        
         })
 })
 
