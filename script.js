@@ -33,6 +33,7 @@ $("#add-city").on("click", function (event) {
          
             uvIndex(response.coord.lon, response.coord.lat)
             forecast(response.coord.lon, response.coord.lat)
+            addButtons()
         })
 })
 
@@ -52,17 +53,6 @@ function forecast(long, lat) {
             var humidity1 =response.daily[1].humidity
             var uv1= response.daily[1].uvi
             var date = response.daily[1].dt
-            
-
-            // $(".card-body1").html("Temp: " + temperature1);
-            // $(".card-body1").html("Date: " + date);
-            // $(".card-body1").html("Wind Speed: " + windSpeed1);
-            // $(".card-body1").html("Humidity: " + humidity1);
-
-            // var newDiv = $("<div>");
-            // newDiv.html("Temp: " + temperature1);
-            // $(".container-fluid forecast").append(newDiv);
-            // console.log(newDiv);
 
             console.log(temperature1);
             console.log(windSpeed1);
@@ -82,7 +72,7 @@ function forecast(long, lat) {
                 $(`.card-body${i}`).append(uv)
                 // $(`.card-body${i}`).append(date)
              }
-            
+           
         })
 }
 
@@ -104,9 +94,14 @@ function uvIndex(long, lat) {
         })
 }
 
-var buttonList =$(".cityList");
-var newCityButton = $("<button>");
-newCityButton.text("weather-input");
-newCityButton.addClass(addCity);
+function addButtons(city){
 
-buttonList.append(newCityButton)
+    var city = $("#weather-input").val();
+    var buttonList =$(".cityList");
+    var newCityButton = $("<button>");
+    newCityButton.text(city);
+    newCityButton.addClass(city);
+    buttonList.append(newCityButton);
+//    console.log(city)
+
+ };
